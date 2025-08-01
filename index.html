@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chef Restaurant</title>
+
+  <link rel="icon" href="img/CHEFLOGO.png" type="image/png">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- IMPORTED FONTS FROM GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- NAV SECTION -->
+
+  <header class="navbar">
+    <img src="img/CHEFLOGO.png" width="8%" height="8%" class="logo4mob">
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <div class="side-panel">
+        <nav class="scroll">
+          <a href="#" class="nav-links active">HOME</a>
+          <a href="specialdishes.html" class="nav-links">SPECIAL DISHES</a>
+          <a href="weeklyoffers.html" class="nav-links">WEEKLY OFFERS</a>
+          <a href="contact.html" class="nav-links">CONTACT</a>
+        </nav>
+      </div>
+  </header>
+
+  <!--END OF NAV SECTION -->
+
+
+  <!-- MAIN SECTION -->
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>CHEF RESTAURANT</h1>
+        <p style="color:white;">
+          "Our restaurant provides advanced skilled, professional and innovative chefs
+          to bring out delicate flavors according to your desired order....."
+        </p>
+        <a href="#menu" class="menu-btn">GO TO MENU</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- END OF MAIN SECTION -->
+
+
+  <!-- MAIN MENU -->
+  
+  <section id="menu" class="section menutype-section">
+  <h2 class="new section-title" align="center">MENU</h2>
+  <div class="menutype-grid">
+
+    <!-- BREAKFAST -->
+    <div class="menutype-item" onclick="toggleMenu('breakfast-list')">
+      <img src="img/dosa.jpg" alt="dosa" width="330" height="295">
+      <h2 align="center">Breakfast</h2>
+      <div id="breakfast-list" class="meal-table-container hidden">
+        <table class="meal-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Dosa with sambol</td><td>Rs. 120</td></tr>
+            <tr><td>Milk rice with lunumiris</td><td>Rs. 100</td></tr>
+            <tr><td>String hoppers (5 pcs)</td><td>Rs. 90</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- LUNCH -->
+    <div class="menutype-item" onclick="toggleMenu('lunch-list')">
+      <img src="img/riceandcurry.jpg" alt="lunch" width="330" height="295">
+      <h2 align="center">Lunch</h2>
+      <div id="lunch-list" class="meal-table-container hidden">
+        <table class="meal-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Rice & Chicken Curry</td><td>Rs. 250</td></tr>
+            <tr><td>Parippu Curry</td><td>Rs. 80</td></tr>
+            <tr><td>Gotukola Sambol</td><td>Rs. 70</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- DINNER -->
+    <div class="menutype-item" onclick="toggleMenu('dinner-list')">
+      <img src="img/koththu.jpg" alt="dinner" width="330" height="295">
+      <h2 align="center">Dinner</h2>
+      <div id="dinner-list" class="meal-table-container hidden">
+        <table class="meal-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Kottu Rotti (chicken)</td><td>Rs. 300</td></tr>
+            <tr><td>Hoppers (2 pcs)</td><td>Rs. 60</td></tr>
+            <tr><td>Fried Rice</td><td>Rs. 280</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+
+  <!-- END OF MAIN MENU -->
+
+
+
+  <!-- LIST SECTION -->
+
+  <section class="special-dishes-section">
+    <h2 class="new section-title">SPECIAL DISHES</h2>
+    <div class="swiper special-dishes-slider">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide dish-card">
+          <img src="img/order1.png" alt="Baked Broccoli">
+          <div class="dish-content">
+            <div class="price-tag">1,550 LKR</div>
+            <h3>Baked Broccoli, Gorgonzola Cheese, Capers</h3>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide dish-card">
+          <img src="img/order2.png" alt="Mushroom Food">
+          <div class="dish-content">
+            <div class="price-tag">1,400 LKR</div>
+            <h3>Meatball Spaghetti</h3>
+          </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="swiper-slide dish-card">
+          <img src="img/order3.png" alt="Steak Spaghetti">
+          <div class="dish-content">
+            <div class="price-tag">1,200 LKR</div>
+            <h3>Steak Spaghetti</h3>
+          </div>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="swiper-slide dish-card">
+          <img src="img/order4.png" alt="Grilled Chicken with Naan & Raw Salad">
+          <div class="dish-content">
+            <div class="price-tag">1,750 LKR</div>
+            <h3>Grilled Chicken with Naan & Raw Salad</h3>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- END OF LIST SECTION -->
+
+
+  <!-- SERVICES SECTION -->
+
+    <section class="service-section">
+      <center><h2 class="new section-title">SERVICES</h2></center>
+        <div class="container">
+          <div class="row">
+            
+            <div class="service-box">
+              <img src="other icons/icons8-champagne-100.png" alt="Drinks Icon" class="service-icon" />
+              <h4 class="service-title">FOOD & BEVERAGES</h4>
+              <p class="service-desc">Savor exquisite culinary experiences at our on-site restaurants and bars, offering a variety of cuisines and ambiances.</p>
+            </div>
+      
+            <div class="service-box">
+              <img src="other icons/icons8-vacuuming-100.png" alt="Seafood Icon" class="service-icon" />
+              <h4 class="service-title">HOUSEKEEPING</h4>
+              <p class="service-desc">Enjoy daily meticulous cleaning and tidying of your room, ensuring a comfortable and refreshing stay.</p>
+            </div>
+      
+            <div class="service-box">
+              <img src="other icons/icons8-dining-room-100.png" alt="Coffee Icon" class="service-icon" />
+              <h4 class="service-title">ROOM SERVICES</h4>
+              <p class="service-desc">Indulge in the convenience of having meals, snacks, and beverages delivered right to your doorstep.</p>
+            </div>
+      
+            <div class="service-box">
+              <img src="other icons/icons8-transportation-100.png" alt="Salad Icon" class="service-icon" />
+              <h4 class="service-title">TRANSPORTATION</h4>
+              <p class="service-desc">Travel with ease using our convenient transportation services to and from the hotel and explore the surrounding areas.</p>
+            </div>
+
+            <div class="service-box">
+              <img src="other icons/icons8-wellness-100.png" alt="Drinks Icon" class="service-icon" />
+              <h4 class="service-title">SPA & WELLNESS</h4>
+              <p class="service-desc">Indulge in relaxation and rejuvenation at our serene spa, offering a range of treatments to soothe yourself.</p>
+            </div>
+      
+            <div class="service-box">
+              <img src="other icons/icons8-meeting-room-100.png" alt="Seafood Icon" class="service-icon" />
+              <h4 class="service-title">MEETING ROOMS</h4>
+              <p class="service-desc">Host successful events and gatherings in our well-equipped meeting rooms, designed for comfort and productivity.</p>
+            </div>
+      
+            <div class="service-box">
+              <img src="other icons/icons8-laundry-bag-100.png" alt="Coffee Icon" class="service-icon" />
+              <h4 class="service-title">LAUNDRY ROOMS</h4>
+              <p class="service-desc">Enjoy the convenience of our on-site laundry facilities, making it easy to keep your clothes fresh during your stay.</p>
+            </div>
+      
+            <div class="service-box">
+              <img src="other icons/icons8-wifi-100.png" alt="Salad Icon" class="service-icon" />
+              <h4 class="service-title">WI-FI</h4>
+              <p class="service-desc">Stay connected with complimentary high-speed Wi-Fi access throughout the hotel premises.</p>
+            </div>
+            
+      
+          </div>
+        </div>
+      </section>
+      
+    
+    <!-- END OF SERVICE SECTION -->
+
+
+  <!-- TESTIMONIAL SECTION -->
+
+  <section class="testimonial-section">
+    <div class="section-header">
+      <h2>TESTIMONIAL</h2>
+    </div>
+
+    <div class="testimonial-container">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <blockquote>
+          “The moment I took the first bite, I knew—this wasn’t just dinner, it was an experience. Every dish was a masterpiece. I can't stop telling everyone about it!”
+        </blockquote>
+        <div class="author">
+          <img src="img/person_1.jpg" alt="Mellisa Howard">
+          <div class="author-info">
+            <h4>Mellisa Howard</h4>
+            <p>CEO, The Jaffna Bounty</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <blockquote>
+          “I've dined in Michelin-starred spots around the world, but this place? It’s in a league of its own. Flavors, presentation, atmosphere—absolutely world-class.”
+        </blockquote>
+        <div class="author">
+          <img src="img/person_2.jpg" alt="Mike Richardson">
+          <div class="author-info">
+            <h4>Mike Richardson</h4>
+            <p>Manager, The Jaffna Bounty</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <blockquote>
+          “I came for a special night and ended up having the best meal of my day. I became speechless. From the service to the final dessert—it was pure magic.”
+        </blockquote>
+        <div class="author">
+          <img src="img/person_3.jpg" alt="Charles White">
+          <div class="author-info">
+            <h4>Charles White</h4>
+            <p>Random Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END OF TESTIMONIAL SECTION -->
+
+
+  <!-- FOOTER SECTION -->
+
+<section id="footer" role="contentinfo" style="background-color: #1a1a1a; color: #f0f0f0; padding: 40px 20px 20px; font-family: 'Roboto Condensed', sans-serif; border-top: 4px solid #fca81a;">
+  <div class="container" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+    <div class="footer-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+
+      <!-- About Us -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h1 style="font-size: 24px; color: #fff; margin-bottom: 10px;">ABOUT US</h1>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;">
+          Founded by lifelong friends and food lovers, our journey began with a shared passion for travel, family gatherings, and bold, honest cooking.
+        </p>
+        <ul style="display: flex; gap: 15px; padding-top: 20px; list-style: none; margin: 0;">
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Opening Hours</h3>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Monday - Saturday:</strong><br>8AM - 11PM</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Sunday:</strong><br>11AM - 12AM</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Contact Info</h3>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Address:</strong> Kankesanthurai Road,Jaffna</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Telephone:</strong> +94 21 221 2345</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Email:</strong> info@chefhotel.com</p>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Services</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Transportation</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Room Services</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Laundry Rooms</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Wi-Fi</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Quick Links</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 10px;"><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+          <li style="margin-bottom: 10px;"><a href="about.html" style="color: #ccc; text-decoration: none;">About</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom" style="margin-top: 40px; text-align: center; font-size: 13px; color: #aaa; border-top: 1px solid #333; padding-top: 15px;">
+      <p>
+        &copy;<script>document.write(new Date().getFullYear());</script> Chef Restaurant | Developed at 
+        <a href="https://colorlib.com" target="_blank" style="color: #aaa; text-decoration: none;">WEBbuilders</a>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- END OF FOOTER SECTION -->
+
+<style>
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 30px !important;
+  }
+
+  .footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    justify-content: flex-start !important;
+  }
+
+  .footer-social li a {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 16px !important;
+  }
+}
+</style>
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper('.special-dishes-slider', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }
+      });
+    </script>
+
+  
+  <script src="script.js"></script> 
+  <script src="menu.js"></script>
+  <script src="list.js"></script>
+  
+
+</body>
+</html>

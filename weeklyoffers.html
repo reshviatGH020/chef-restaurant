@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Offers - Chef Restaurant</title>
+
+  <link rel="icon" href="img/CHEFLOGO.png" type="image/png">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- IMPORTED FONTS FROM GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- NAV SECTION -->
+
+  <header class="navbar">
+    <img src="img/CHEFLOGO.png" width="8%" height="8%" class="logo4mob">
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <div class="side-panel">
+        <nav class="scroll">
+          <a href="index.html" class="nav-links">HOME</a>
+          <a href="specialdishes.html" class="nav-links">SPECIAL DISHES</a>
+          <a href="#" class="nav-links active">WEEKLY OFFERS</a>
+          <a href="contact.html" class="nav-links">CONTACT</a>
+        </nav>
+      </div>
+  </header>
+
+  <!--END OF NAV SECTION -->
+
+
+    <!-- HERO SECTION -->
+<section class="hero-section" style="background-image: url('img/offer1.jpeg');">
+  <div class="overlay">
+    <div class="hero-text">
+      <h1>This Week’s Hot Deals!</h1>
+    </div>
+  </div>
+</section>
+
+<!-- WEEKLY OFFERS SECTION -->
+<section class="weekly-offers-section">
+  <div class="container">
+    <div class="row">
+
+      <!-- Offer 1 -->
+      <div class="offer-box">
+        <img src="img/dosa2.jpg" alt="Dosa Combo" class="offer-img" />
+        <h4 class="offer-title">South Indian Dosa Combo</h4>
+        <p class="offer-desc">Crispy dosas + chutney + masala + sweet dessert <br><strong>Only LKR 750</strong></p>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="offer-box">
+        <img src="img/koththu.jpg" alt="Kottu Combo" class="offer-img" />
+        <h4 class="offer-title">Chicken Kottu Set</h4>
+        <p class="offer-desc">Spicy Chicken Kottu + Soft Drink <br><strong>Only LKR 890</strong></p>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="offer-box">
+        <img src="img/idly.jpeg" alt="Breakfast Deal" class="offer-img" />
+        <h4 class="offer-title">Morning Delight</h4>
+        <p class="offer-desc">Idly + Sambar + Filter Coffee <br><strong>Only LKR 590</strong></p>
+      </div>
+
+      <!-- Offer 4 -->
+      <div class="offer-box">
+        <img src="img/thali.jpeg" alt="Veg Thali" class="offer-img" />
+        <h4 class="offer-title">Veg Thali Feast</h4>
+        <p class="offer-desc">Full Sri Lankan Veg Thali + Curd <br><strong>Only LKR 980</strong></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STYLES FOR WEEKLY OFFERS -->
+<style>
+.weekly-offers-section {
+  padding: 60px 20px;
+  background-color: #fff8f0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.weekly-offers-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.offer-box {
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.offer-box:hover {
+  transform: translateY(-5px);
+}
+
+.offer-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.offer-title {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  color: #e67e22;
+}
+
+.offer-desc {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+</style>
+     
+
+    <!-- FOOTER SECTION -->
+
+<section id="footer" role="contentinfo" style="background-color: #1a1a1a; color: #f0f0f0; padding: 40px 20px 20px; font-family: 'Roboto Condensed', sans-serif; border-top: 4px solid #fca81a;">
+  <div class="container" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+    <div class="footer-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+
+      <!-- About Us -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h1 style="font-size: 24px; color: #fff; margin-bottom: 10px;">ABOUT US</h1>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;">
+          Founded by lifelong friends and food lovers, our journey began with a shared passion for travel, family gatherings, and bold, honest cooking.
+        </p>
+        <ul style="display: flex; gap: 15px; padding-top: 20px; list-style: none; margin: 0;">
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Opening Hours</h3>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Monday - Saturday:</strong><br>8AM - 11PM</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Sunday:</strong><br>11AM - 12AM</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Contact Info</h3>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Address:</strong> Kankesanthurai Road,Jaffna</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Telephone:</strong> +94 21 221 2345</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Email:</strong> info@chefhotel.com</p>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Services</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Transportation</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Room Services</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Laundry Rooms</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Wi-Fi</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Quick Links</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 10px;"><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+          <li style="margin-bottom: 10px;"><a href="about.html" style="color: #ccc; text-decoration: none;">About</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom" style="margin-top: 40px; text-align: center; font-size: 13px; color: #aaa; border-top: 1px solid #333; padding-top: 15px;">
+      <p>
+        &copy;<script>document.write(new Date().getFullYear());</script> Chef Restaurant | Developed at 
+        <a href="https://colorlib.com" target="_blank" style="color: #aaa; text-decoration: none;">WEBbuilders</a>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- END OF FOOTER SECTION -->
+
+<style>
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 30px !important;
+  }
+
+  .footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    justify-content: flex-start !important;
+  }
+
+  .footer-social li a {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 16px !important;
+  }
+}
+</style>
+
+  <script src="menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Special Dishes - Chef Restaurant</title>
+
+  <link rel="icon" href="img/CHEFLOGO.png" type="image/png">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- IMPORTED FONTS FROM GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- NAV SECTION -->
+
+  <header class="navbar">
+    <img src="img/CHEFLOGO.png" width="8%" height="8%" class="logo4mob">
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <div class="side-panel">
+        <nav class="scroll">
+          <a href="index.html" class="nav-links">HOME</a>
+          <a href="#" class="nav-links active">SPECIAL DISHES</a>
+          <a href="weeklyoffers.html" class="nav-links">WEEKLY OFFERS</a>
+          <a href="contact.html" class="nav-links">CONTACT</a>
+        </nav>
+      </div>
+  </header>
+
+  <!--END OF NAV SECTION -->
+
+
+    <!-- MAIN PAGE -->
+    
+      <!-- Hero/Slider Section -->
+      <section class="hero-section" style="background-image: url('img/cover2.jpg');">
+        <div class="overlay">
+          <div class="hero-text">
+            <h1>Special Dishes from US</h1>
+          </div>
+        </div>
+      </section>
+    
+      <script>
+        // Toggle menu on mobile
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+        toggle.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+      </script>
+
+    <!-- END OF MAIN PAGE -->
+
+
+    <!-- LIST SECTION -->
+
+    <section class="special-dishes-section">
+        <h2 class="section-title">MAIN DISHES OUT NOW!!!!!</h2>
+        <div class="swiper special-dishes-slider">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide dish-card">
+            <img src="img/dishes_1.jpg" alt="Baked Broccoli">
+            <div class="dish-content">
+                <div class="price-tag">Rs. 1,550</div>
+                <h3>Baked Broccoli, Gorgonzola Cheese, Capers</h3>
+            </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide dish-card">
+            <img src="img/dishes_5.jpg" alt="Mushroom Food">
+            <div class="dish-content">
+                <div class="price-tag">Rs. 1,400</div>
+                <h3>Meatball Spaghetti</h3>
+            </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="swiper-slide dish-card">
+            <img src="img/dishes_3.jpg" alt="Steak Spaghetti">
+            <div class="dish-content">
+                <div class="price-tag">Rs. 1,200</div>
+                <h3>Steak Spaghetti</h3>
+            </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="swiper-slide dish-card">
+            <img src="img/dishes_4.jpg" alt="Grilled Chicken with Naan & Raw Salad">
+            <div class="dish-content">
+                <div class="price-tag">Rs. 1,750</div>
+                <h3>Grilled Chicken with Naan & Raw Salad</h3>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+  <!-- END OF LIST SECTION -->
+
+
+  <!-- FOOTER SECTION -->
+
+<section id="footer" role="contentinfo" style="background-color: #1a1a1a; color: #f0f0f0; padding: 40px 20px 20px; font-family: 'Roboto Condensed', sans-serif; border-top: 4px solid #fca81a;">
+  <div class="container" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+    <div class="footer-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+
+      <!-- About Us -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h1 style="font-size: 24px; color: #fff; margin-bottom: 10px;">ABOUT US</h1>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;">
+          Founded by lifelong friends and food lovers, our journey began with a shared passion for travel, family gatherings, and bold, honest cooking.
+        </p>
+        <ul style="display: flex; gap: 15px; padding-top: 20px; list-style: none; margin: 0;">
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #444; color: #fff; font-size: 18px; transition: 0.3s;"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Opening Hours</h3>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Monday - Saturday:</strong><br>8AM - 11PM</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Sunday:</strong><br>11AM - 12AM</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Contact Info</h3>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Address:</strong> Kankesanthurai Road,Jaffna</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Telephone:</strong> +94 21 221 2345</p>
+        <p style="color: #ccc; font-size: 14px; line-height: 1.6;"><strong>Email:</strong> info@chefhotel.com</p>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Services</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Transportation</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Room Services</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Laundry Rooms</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Wi-Fi</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col" style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="margin-bottom: 15px; font-size: 18px; color: #fca81a; text-transform: uppercase;">Quick Links</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 10px;"><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+          <li style="margin-bottom: 10px;"><a href="about.html" style="color: #ccc; text-decoration: none;">About</a></li>
+          <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom" style="margin-top: 40px; text-align: center; font-size: 13px; color: #aaa; border-top: 1px solid #333; padding-top: 15px;">
+      <p>
+        &copy;<script>document.write(new Date().getFullYear());</script> Chef Restaurant | Developed at 
+        <a href="https://colorlib.com" target="_blank" style="color: #aaa; text-decoration: none;">WEBbuilders</a>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- END OF FOOTER SECTION -->
+
+<style>
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 30px !important;
+  }
+
+  .footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    justify-content: flex-start !important;
+  }
+
+  .footer-social li a {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 16px !important;
+  }
+}
+</style>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        new Swiper('.special-dishes-slider', {
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 20,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }
+        });
+      </script>
+
+      <script src="menu.js"></script>
+
+</body>
+</html>
